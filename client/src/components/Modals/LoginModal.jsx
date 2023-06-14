@@ -53,11 +53,11 @@ function LoginModal({ opened, close, logged }) {
         onClose={close}
         title="Authentication"
         styles={{
-          body: { backgroundColor: "#090325" },
-          header: { backgroundColor: "#090325", color: "#aaa6c3" },
+          body: { backgroundColor: "#1C3B46" },
+          header: { backgroundColor: "#1C3B46", color: "#fff" },
           close: {
-            color: "#00B700",
-            "&:hover": { background: "#00B700", color: "#090325" },
+            color: "#aaa6c3",
+            "&:hover": { background: "#151030", color: "#fff" },
           },
           overlay: { backdropFilter: "blur(5px)" },
         }}
@@ -196,7 +196,7 @@ function LoginModal({ opened, close, logged }) {
                     icon: { color: "white" },
                     input: {
                       background: form.values.terms
-                        ? "#00B700 !important"
+                        ? "#050816 !important"
                         : "white",
                       border: form.values.terms
                         ? "transparent !important"
@@ -222,7 +222,7 @@ function LoginModal({ opened, close, logged }) {
               <Button
                 type="submit"
                 radius="xl"
-                sx={{ backgroundColor: "#090325 !important", color: "#00B700" }}
+                sx={{ backgroundColor: "#050816 !important", color: "#fff" }}
               >
                 {upperFirst(type)}
               </Button>

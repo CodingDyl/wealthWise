@@ -26,6 +26,7 @@ const Navbar = () => {
           <a href="/" className="brand-logo">WealthWise</a>
         </div>
         <ul id="nav-mobile" className="flex gap-6 text-[18px] text-normal">
+          <li className={loggedIn ? "block" : "hidden"}><a href='/dashboard'>Dashboard</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><button onClick={handleLogin} className="text-white">
